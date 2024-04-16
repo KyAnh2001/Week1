@@ -1,5 +1,7 @@
+/* Chung */
 body {
     font-family: Arial, Helvetica, sans-serif; 
+    color:#62696d;
     background-color: #f5f5f5;
 }
 form {
@@ -18,7 +20,7 @@ form {
     
 }
 
-input[type=text], input[type=password] {
+#username, #password {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -36,34 +38,167 @@ button {
   border-radius: 5px;
   cursor: pointer;
   height: 40px;
-  width: 100px;
+  width: 120px;
 }
 
 button:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+a {
+  text-decoration: none;
+  color: #2783ec;
 }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+a:hover {
+  color:#f28e19;  
 }
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
 .container {
   padding: 16px;
 }
 
-span.psw {
+/* Dashboard */
+
+.dashboard{
+  height: 800px;
+  width: 1000px;
+  text-align: center;
+}
+
+#viewDevice{
+  background-color: #ffffff;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+table{
+  border-collapse: collapse;
+}
+#viewDevice th{
+  font-weight: normal;
+  border-bottom: 0.5px solid rgb(121, 118, 118);
+  height: 35px;
+}
+
+#viewDevice td{
+  border-bottom: 0.5px solid rgb(209, 205, 205);
+  text-align: center;
+  height: 40px;
+}
+
+#totalRow{
+  font-weight: bold;
+}
+
+.chartAdd{
+  display: flex;
+  margin-top: 40px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.chart{
+  background-color: #ffffff;
+  height: 500px;
+  width: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.addDevice{
+  background-color: #ffffff;
+  height: 500px;
+  width: 50%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.addDevice input {
+  height: 60px;
+  width: 80%;
+  padding-left: 10px;
+  background-color: #F6F3F3;
+  border-radius: 5px;
+  border: 1px solid #E9E6E6;
+  box-shadow: #ccc;
+}
+.space{
+  height: 50px;
+}
+
+.addDevice button{
+  width: 150px;
+}
+
+.chart-container{
+  width: 400px;
+}
+
+/* Header n Sidebar Menu */
+
+.mainDashboard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  margin-bottom: 50px;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+span{
+  margin: auto 0 auto 0;
+}
+
+.account{
+  height: 100%;
   float: right;
-  padding-top: 16px;
+  padding-right: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+} 
+
+.sidebar{
+  float: left;
+  height: 99vh;
+  width: 200px;
+  background-color: #ffffff;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  box-shadow: #62696d;
+}
+
+.sidebar a{
+  color:#62696d;
+}
+
+.sidebar p{
+  color: black;
+  font-size: bold;
+}
+
+.sidebar a:hover{
+  color: #2783ec;
+  cursor: pointer;
+}
+.sidebar .rowhome{
+  display: flex;
+}
+
+.sidebar .rowmenu{
+  display: flex;
+  margin-top: 25px;
 }

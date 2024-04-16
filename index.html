@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
     <div class="wrapper">
-        <form action="/action_page.php" method="post">
+        <form id="formlogin">
             <h1>SOIOT SYSTEM</h1>
             <div class="container">
-              <input type="text" placeholder="Username" name="uname" required>
+              <input type="text" placeholder="Username" name="uname" id="username">
           
-              <input type="password" placeholder="Password" name="psw" required>
-                  
-              <button type="submit">Login</button>
+              <input type="password" placeholder="Password" name="psw" id="password">
+                
+              <button type="button" onclick="login()">LOGIN</button>
               <a href="#">or create new account</a>
             </div>
         </form>   
@@ -23,5 +23,17 @@
 </body>
 </html>
 <script>
-    
+    function login(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(username === "" || password ===""){
+            alert("Điền đầy đủ thông tin đăng nhập")
+        }
+        else if(username === "john" && password ==="1234"){
+            window.location.href="dashboard.html"
+        }
+        else{
+            alert("Sai thông tin đăng nhập");
+        }
+    }
 </script>
