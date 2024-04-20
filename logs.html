@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logs</title>
+        <link rel="stylesheet" href="css/logs.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="menu"></div>
+            <div class="rowhome">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <p>Device Manager</p>
+            </div>
+            <div class="rowmenu">
+                <span class="material-symbols-outlined">
+                    dataset_linked
+                </span>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="rowmenu">
+                <span class="material-symbols-outlined">
+                    device_reset
+                </span>
+                <a href="logs.html" style="color: #2783ec;">Logs</a>
+            </div>
+            <div class="rowmenu">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+                <a>Settings</a>
+            </div>
+        </div>
+
+        <div class="mainLogs">
+            <div class="header">
+                <div class="account">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p> Welcome John</p>
+                </div>
+            </div>
+
+            <div class="logs">
+                <div class="searchLogs">
+                    <h3>Action Logs</h3>
+                    <div class="search">
+                        <input type="text" id="myInput" name="searchlogs"
+                            id="searchlogs" placeholder="Search">
+                        <button type="button" onclick="search()">Search</button>
+                    </div>
+                </div>
+                <div class="tableLogs">
+                    <table id="viewLogs">
+                        <thead>
+                            <tr>
+                                <th>Device ID #</th>
+                                <th>Name</th>
+                                <th>Action</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1001</td>
+                            <td>TV</td>
+                            <td>Turn On</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>TV</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1004</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>TV</td>
+                            <td>Sleep</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1006</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1007</td>
+                            <td>TV</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1008</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1009</td>
+                            <td>Washer</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1010</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1011</td>
+                            <td>TV</td>
+                            <td>Turn On</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1012</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1013</td>
+                            <td>Refrigerator</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1014</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1015</td>
+                            <td>Refrigerator</td>
+                            <td>Sleep</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1016</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1017</td>
+                            <td>Washer</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1018</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1019</td>
+                            <td>Washer</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1020</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1021</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1022</td>
+                            <td>Refrigerator</td>
+                            <td>Turn On</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1023</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1024</td>
+                            <td>Refrigerator</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1025</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1026</td>
+                            <td>Refrigerator</td>
+                            <td>Sleep</td>
+                            <td>124689</td>
+                        </tr>
+                        <tr>
+                            <td>1027</td>
+                            <td>TV</td>
+                            <td>Turn Off</td>
+                            <td>124765</td>
+                        </tr>
+                        <tr>
+                            <td>1028</td>
+                            <td>Washer</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1029</td>
+                            <td>Selling Fan</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tr>
+                            <td>1030</td>
+                            <td>Washer</td>
+                            <td>Turn On</td>
+                            <td>124459</td>
+                        </tr>
+                        <tr>
+                            <td>1031</td>
+                            <td>Refrigerator</td>
+                            <td>Turn Off</td>
+                            <td>121289</td>
+                        </tr>
+                        <tfoot>
+                            <tr id="totalRow">
+                                <td>Total</td>
+                                <td></td>
+                                <td></td>
+                                <td><p id="total">255</p></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div id="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="js/logs.js"></script>
+<script src="js/logins.js"></script>

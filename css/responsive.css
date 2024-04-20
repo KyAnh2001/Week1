@@ -1,0 +1,98 @@
+@media only screen and (max-width: 414px) {
+    .sidebar {
+        display: none;
+        width: 150px;
+    }
+
+    .mobile-sidebar {
+        display: block;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .table {
+        display: none;
+    }
+
+    .mainDashboard {
+        height: 100vh;
+    }
+
+    .dashboard {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chartAdd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .chart {
+        background-color: #ffffff;
+        height: 50%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .addDevice {
+        background-color: #ffffff;
+        margin: 0px;
+        margin-top: 10px;
+        height: 50%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .addDevice button {
+        width: 80%;
+    }
+
+    .chart-container {
+        width: 100%;
+    }
+
+    canvas {
+        display: flex;
+        width: 60%;
+        height: 400px;
+    }
+
+    .hide-bar {
+        display: block;
+        margin-right: auto;
+    }
+
+    .sidebar .rowhome {
+        display: none;
+    }
+
+    .mobile-welcome {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .mobile-welcome span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-welcome p {
+        text-align: center;
+        margin: 0;
+    }
+}
