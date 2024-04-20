@@ -275,7 +275,7 @@ function showEditForm(device, address, ip, date, consumption) {
     document.getElementById("addDevice").style.display = "none";
 }
 
-// hàm save dữ liệu Edit bị lỗi không edit được dữ liệu
+// save Edit
 
 document.getElementById("saveEdit").addEventListener("click", function() {
     var editedDevice = document.getElementById("editDeviceName").value;
@@ -306,6 +306,7 @@ document.getElementById("saveEdit").addEventListener("click", function() {
     }
     
     loadData();
+    location.reload();
 
     document.getElementById("editDevice").style.display = "none";
     document.getElementById("addDevice").style.display = "block";
